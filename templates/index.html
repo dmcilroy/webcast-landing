@@ -1,43 +1,77 @@
-{% extends "base.html" %}
+{% extends "/base.html" %}
 
-{% block content %} 
-    <div class="container gridshading">
-        <div class="row one">
-            <div class="col-md-12">
-                Header
-            </div>
+{% block content %}
+<div class="container">
+    <div class="customstyle">
+      <div class="row">
+        <div class="col-md">
+            <div class="jumbotron">
+<h1 class="display-4">Welcome to John and Sarah's Wedding Webcast!</h1>
+<p class="lead">Please join us here on our website on Saturday, August 15, 2020 at 12:00 noon (PDT) to view the live
+  stream of Sarah Smith and John Hepburn’s marriage ceremony.</p>
+<hr class="my-4">
+<p>How did our love story begin?</p>
+<a class="btn btn-primary btn-lg" href="about.html" role="button">Click Here</a>
+</div>
         </div>
-
-        <div class="row two">
-            <div class="col-md-2">
-                <div class="row nested">
-                    <div class="col-md-12">
-                        Aside
-                    </div>
-                    <div class="col-md-12">
-                        Aside
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                Section
-            </div>
-            <div class="col-md-2">
-                <div class="row nested">
-                    <div class="col-md-12">
-                        Aside
-                    </div>
-                    <div class="col-md-12">
-                        Aside
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+<img src="https://cdn.realtor.ca/listing/TS637138065957030000/reb6/highres/6/r2416096_1.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Photo 1</h5>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+<div class="card-body">
+  <a href="#" class="card-link">Card link</a>
+  <a href="#" class="card-link">Another link</a>
+</div>
+</div>
         </div>
-
-        <div class="row three">
-            <div class="col-md-12">
-                Footer
-            </div>
+        <div class="col-md-4 col-lg-6">
+            <div class="card">
+<img src="https://cdn.realtor.ca/listing/TS636973051691700000/reb6/highres/1/r2384441_1.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Drop Video Player Here</h5>
+  <p class="card-text">Embed a video player and link the file.</p>
+</div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+<div class="card-body">
+  <a href="#" class="card-link">Card link</a>
+  <a href="#" class="card-link">Another link</a>
+</div>
+</div>
         </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+<img src="https://cdn.realtor.ca/listing/TS637146189136930000/reb6/highres/5/r2427755_1.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Photo 2</h5>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+<div class="card-body">
+  <a href="#" class="card-link">Card link</a>
+  <a href="#" class="card-link">Another link</a>
+</div>
+</div>
+        </div>
+      </div>
+      {{super()}}
     </div>
+  </div>
 {% endblock %}
